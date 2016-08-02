@@ -1,0 +1,98 @@
+﻿<controls:ChildWindow x:Class="softwareEngineering.InsertPage"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+           Width="580" Height="540" 
+           Title="新增数据">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="170"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="170"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="CancelButton" Content="取消" Click="CancelButton_Click" Width="75"  TabIndex="17" Height="23" HorizontalAlignment="Right" Margin="0,35,70,42" Grid.Row="9" Grid.Column="4" Grid.RowSpan="2" />
+        <Button x:Name="OKButton" Content="确定" Click="OKButton_Click" Width="75" Height="23"  TabIndex="16" HorizontalAlignment="Right" Margin="0,35,9,42" Grid.Row="9" Grid.Column="3" Grid.RowSpan="2" />
+
+        <TextBlock Text="进货编号:" Grid.Row="1" Grid.Column="1"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="1" x:Name="stocknumber" Grid.Column="2" Margin="0,16,20,9" TabIndex="1"></TextBox>
+
+        <TextBlock Text="生产地:" Grid.Row="1" Grid.Column="3"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="1" x:Name="producingarea" Grid.Column="4" Margin="0,16,20,9" TabIndex="2"></TextBox>
+
+        <TextBlock Text="货物名称:" Grid.Row="2" Grid.Column="1"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="2" x:Name="goodname" Grid.Column="2" Margin="0,16,20,9" TabIndex="3"></TextBox>
+
+        <TextBlock Text="生产日期:" Grid.Row="2" Grid.Column="3"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <telerik:RadDateTimePicker   x:Name="productiondate" Margin="1,12,0,8"  Height="30" Grid.Row="2" Grid.Column="4" TabIndex="4"
+                                           SelectableDateStart="1990-01-01"
+                                           SelectableDateEnd="2050-12-31"   InputMode="DatePicker" HorizontalAlignment="Left" VerticalAlignment="Center" Width="149">
+        </telerik:RadDateTimePicker>
+
+
+        <TextBlock Text="所属类别:" Grid.Row="3" Grid.Column="1"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="3" x:Name="category" Grid.Column="2" Margin="0,16,20,9" TabIndex="5"></TextBox>
+        
+        <TextBlock Text="过期日期:" Grid.Row="3" Grid.Column="3"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <telerik:RadDateTimePicker   x:Name="deadline" Margin="1,12,0,8"  Height="30" Grid.Row="3" Grid.Column="4" TabIndex="6"
+                                           SelectableDateStart="1990-01-01"
+                                           SelectableDateEnd="2050-12-31"   InputMode="DatePicker" HorizontalAlignment="Left" VerticalAlignment="Center" Width="149">
+        </telerik:RadDateTimePicker>
+        
+        <TextBlock Text="等级:" Grid.Row="4" Grid.Column="1"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <telerik:RadComboBox  x:Name="grade"   Grid.Row="4" Grid.Column="2" Height="30" TabIndex="7"
+                                     Width="149" Margin="1,2,0,2" HorizontalAlignment="Left"  SelectedIndex="0"
+                                     DisplayMemberPath="ID"
+                                     SelectedValuePath="ID" 
+                                     SelectedItem="{Binding gradeItem, Mode=TwoWay}" 
+                                     ItemsSource="{Binding gradeItemList, Mode=TwoWay}">
+        </telerik:RadComboBox>
+
+        <TextBlock Text="进货日期:" Grid.Row="4" Grid.Column="3"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <telerik:RadDateTimePicker   x:Name="stockdate" Margin="1,12,0,8"  Height="30" Grid.Row="4" Grid.Column="4"
+                                           SelectableDateStart="1990-01-01"
+                                           SelectableDateEnd="2050-12-31" TabIndex="8"   InputMode="DatePicker" HorizontalAlignment="Left" VerticalAlignment="Center" Width="149">
+        </telerik:RadDateTimePicker>
+
+        <TextBlock Text="单位:" Grid.Row="5" Grid.Column="1"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="5" x:Name="unit" Grid.Column="2" Margin="0,16,20,9" TabIndex="9"></TextBox>
+
+        <TextBlock Text="进货人:" Grid.Row="5" Grid.Column="3"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="5" x:Name="stockperson" Grid.Column="4" Margin="0,16,20,9" TabIndex="10"></TextBox>
+
+        <TextBlock Text="单价:" Grid.Row="6" Grid.Column="1"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="6" x:Name="unitprice" Grid.Column="2" Margin="0,16,20,9" TabIndex="11" TextChanged="unitprice_TextChanged"></TextBox>
+
+        <TextBlock Text="供货商:" Grid.Row="6" Grid.Column="3"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="6" x:Name="supplyperson" Grid.Column="4" Margin="0,16,20,9" TabIndex="12"></TextBox>
+
+        <TextBlock Text="数量:" Grid.Row="7" Grid.Column="1"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="7" x:Name="quantity" Grid.Column="2" Margin="0,16,20,9" TabIndex="13" TextChanged="quantity_TextChanged"></TextBox>
+
+        <TextBlock Text="金额合计:" Grid.Row="7" Grid.Column="3"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="7" x:Name="moneyamount" Grid.Column="4" Margin="0,16,20,9" TabIndex="14" IsEnabled="False"></TextBox>
+
+
+        <TextBlock Text="备注:" Grid.Row="8" Grid.Column="1"  FontSize="15"  TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <TextBox  Grid.Row="8" x:Name="remark"  Grid.Column="2" Margin="0,16,20,9" TabIndex="15"></TextBox>
+
+    </Grid>
+</controls:ChildWindow>

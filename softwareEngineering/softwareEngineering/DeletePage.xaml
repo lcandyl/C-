@@ -1,0 +1,39 @@
+﻿<controls:ChildWindow x:Class="softwareEngineering.DeletePage"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+           xmlns:ribbon="clr-namespace:DSV.Controls.Menu.Ribbon;assembly=DSV.Controls.Menu" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           Width="400" Height="300" 
+           Title="删除">
+    <Grid x:Name="LayoutRoot" Margin="2" Height="268" Width="304">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="48*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="10*" />
+           
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="进货编号:"  FontSize="15" Grid.Row="2"  Grid.Column="1" TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center"  Height="30"></TextBlock>
+        <TextBox   x:Name="stocknumberD"  Margin="4,16,28,9" Grid.Row="2" Grid.Column="2" TabIndex="1" Grid.ColumnSpan="2"></TextBox>
+
+        <TextBlock Text="进货日期:"  FontSize="15"  Grid.Row="3" Grid.Column="1" TextAlignment="Right" Margin="1,17,9,8" VerticalAlignment="Center" Height="30"></TextBlock>
+        <telerik:RadDateTimePicker   x:Name="stockdateD" Margin="13,12,0,8"  Height="30" TabIndex="2"
+                                           SelectableDateStart="1990-01-01" Grid.Row="3" Grid.Column="2"
+                                           SelectableDateEnd="2050-12-31"   InputMode="DatePicker" HorizontalAlignment="Left" VerticalAlignment="Center" Width="147" Grid.ColumnSpan="2">
+        </telerik:RadDateTimePicker>
+        <telerik:RadToolBarSeparator Margin="10,0,0,0"/>
+        
+        <Button x:Name="CancelButton" Content="取消" Click="CancelButton_Click" Width="75" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Right" Margin="0,19,34,2" Grid.ColumnSpan="2" />
+        <Button x:Name="OKButton" Content="确定" Click="OKButton_Click" Width="75"  Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Margin="0,19,117,2" Grid.ColumnSpan="2" />
+    </Grid>
+</controls:ChildWindow>

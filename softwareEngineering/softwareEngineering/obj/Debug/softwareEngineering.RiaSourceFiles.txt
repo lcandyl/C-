@@ -1,0 +1,1 @@
+F:\自己编写的程序\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\softwareEngineering.Web.csproj,635714328895830071,Properties\AssemblyInfo.cs,

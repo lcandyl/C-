@@ -1,0 +1,10 @@
+F:\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\bin\softwareEngineering.Web.dll
+F:\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\bin\softwareEngineering.Web.pdb
+F:\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\obj\Debug\ResolveAssemblyReference.cache
+F:\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\obj\Debug\softwareEngineering.Web.dll
+F:\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\obj\Debug\softwareEngineering.Web.pdb
+F:\自己编写的程序\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\bin\softwareEngineering.Web.dll
+F:\自己编写的程序\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\bin\softwareEngineering.Web.pdb
+F:\自己编写的程序\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\obj\Debug\softwareEngineering.Web.dll
+F:\自己编写的程序\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\obj\Debug\softwareEngineering.Web.pdb
+F:\自己编写的程序\SoftwareEngineering\softwareEngineering\softwareEngineering.Web\obj\Debug\softwareEngineering.Web.csprojResolveAssemblyReference.cache

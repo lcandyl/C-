@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="softwareEngineering.FirstPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:ribbon="clr-namespace:DSV.Controls.Menu.Ribbon;assembly=DSV.Controls.Menu" 
+    xmlns:trigger="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:actions="clr-namespace:LIS.MainProject.Utility.Actions;assembly=LIS.MainProject.Utility"
+    xmlns:Utility="clr-namespace:LIS.MainProject.Utility.Controls;assembly=LIS.MainProject.Utility" 
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    <telerik:RadBusyIndicator x:Name="RBI_BusyBar">
+        <Grid x:Name="LayoutRoot" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel  HorizontalAlignment="Stretch" Orientation="Vertical" Grid.Row="0">
+                <telerik:RadToolBar VerticalAlignment="Center" x:Name="RTB_ToolBar">
+                    <TextBlock Text="采购管理系统" Margin="10,2" HorizontalAlignment="Center"  FontSize="20"></TextBlock>
+                    <telerik:RadToolBarSeparator Margin="30,0,0,0"/>
+                    <TextBlock Height="23" Name="textBlock1" Text="进货日期" Margin="10,2" FontSize="12" />
+                    <telerik:RadDateTimePicker   x:Name="radDTStartTime" Margin="10,2" Height="23"
+                                           SelectableDateStart="1990-01-01"
+                                           SelectableDateEnd="2050-12-31" TabIndex="3"   InputMode="DatePicker" HorizontalAlignment="Left" VerticalAlignment="Center" Width="90">
+                    </telerik:RadDateTimePicker>
+                    <TextBlock Text="至" FontSize="12" Margin="10,2" />
+                    <telerik:RadDateTimePicker   x:Name="radDTEndTime" Margin="10,2"  Height="23"
+                                           SelectableDateStart="1990-01-01"
+                                           SelectableDateEnd="2050-12-31" TabIndex="3"   InputMode="DatePicker" HorizontalAlignment="Left" VerticalAlignment="Center" Width="90">
+                    </telerik:RadDateTimePicker>
+                    <TextBlock Text="等级" Margin="10,2" HorizontalAlignment="Left" FontSize="12"></TextBlock>
+                    <telerik:RadComboBox  x:Name="RCB_Grade" 
+                                     Width="70" Margin="10,2" HorizontalAlignment="Left"  SelectedIndex="0"
+                                     DisplayMemberPath="ID"
+                                     SelectedValuePath="ID" 
+                                     SelectedItem="{Binding SelectclItem, Mode=TwoWay}" 
+                                     ItemsSource="{Binding SelectclItemList, Mode=TwoWay}">
+                    </telerik:RadComboBox>
+                    <telerik:RadToolBarSeparator Margin="10,0,0,0"/>
+                    <ribbon:RibbonButton Label="查询" ShowImage="Visible" ButtonSize="Small" Margin="5,0,0,0" x:Name="RadBtn_Query" />
+                    <ribbon:RibbonButton Label="新增" ShowImage="Visible" ButtonSize="Small" Margin="5,0,0,0" x:Name="RadBtn_Insert"/>
+                    <ribbon:RibbonButton Label="编辑" ShowImage="Visible" ButtonSize="Small" Margin="5,0,0,0" x:Name="RadBtn_Update"/>
+                    <ribbon:RibbonButton Label="删除" ShowImage="Visible" ButtonSize="Small" Margin="5,0,0,0" x:Name="RadBtn_Delete" IsEnabled="{Binding Available}" />
+                    <ribbon:RibbonButton Label="输出Excel" ShowImage="Visible" ButtonSize="Small" Margin="5,0,0,0" x:Name="RadBtn_Excel" IsEnabled="{Binding Available}"/>
+                </telerik:RadToolBar>
+                <Image x:Name="Img_Top" Cursor="Hand"  HorizontalAlignment="Center" Height="8" Width="62" DataContext="{Binding}">
+                    <trigger:Interaction.Triggers>
+                        <trigger:EventTrigger EventName="MouseLeftButtonDown">
+                            <actions:SliderColumnDefinitionAction TargetName="RTB_ToolBar"/>
+                        </trigger:EventTrigger>
+                    </trigger:Interaction.Triggers>
+                </Image>
+            </StackPanel>
+
+            <Utility:PageDataGrid x:Name="pdgResultGrid" Grid.Row="1" Grid.Column="1" HeaderHeight="40" IsHeaderCheckBox="False"  Visibility="{Binding Path=IsReady, Converter={StaticResource BooleanToVisibilityConverter}}" Margin="0,6,0,0" Grid.RowSpan="2">
+                <Utility:PageDataGrid.DG_InnerDataGrid>
+                    <Utility:ScrollDataGrid  x:Name="DG_InnerDataGrid" CanUserResizeColumns="True" ItemsSource="{Binding GridItemsSource,Mode=TwoWay}" SelectionMode="Single">
+                    </Utility:ScrollDataGrid>
+                </Utility:PageDataGrid.DG_InnerDataGrid>
+            </Utility:PageDataGrid>
+
+        </Grid>
+    </telerik:RadBusyIndicator>
+</UserControl>

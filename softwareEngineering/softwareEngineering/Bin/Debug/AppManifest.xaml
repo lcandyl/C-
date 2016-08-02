@@ -1,0 +1,70 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="softwareEngineering" EntryPointType="softwareEngineering.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="softwareEngineering" Source="softwareEngineering.dll" />
+    <AssemblyPart x:Name="DevExpress.AgMenu.v8.2" Source="DevExpress.AgMenu.v8.2.dll" />
+    <AssemblyPart x:Name="Divelements.SilverlightTools" Source="Divelements.SilverlightTools.dll" />
+    <AssemblyPart x:Name="DSV.Controls" Source="DSV.Controls.dll" />
+    <AssemblyPart x:Name="DSV.Controls.Menu" Source="DSV.Controls.Menu.dll" />
+    <AssemblyPart x:Name="DSV.Controls.Windows" Source="DSV.Controls.Windows.dll" />
+    <AssemblyPart x:Name="ESRI.ArcGIS.Client" Source="ESRI.ArcGIS.Client.dll" />
+    <AssemblyPart x:Name="ESRI.ArcGIS.Client.Toolkit" Source="ESRI.ArcGIS.Client.Toolkit.dll" />
+    <AssemblyPart x:Name="FJ.Core" Source="FJ.Core.dll" />
+    <AssemblyPart x:Name="GalaSoft.MvvmLight.SL4" Source="GalaSoft.MvvmLight.SL4.dll" />
+    <AssemblyPart x:Name="LIS.Container.WebOS" Source="LIS.Container.WebOS.dll" />
+    <AssemblyPart x:Name="LIS.Desktop" Source="LIS.Desktop.dll" />
+    <AssemblyPart x:Name="LIS.MainProject.Common" Source="LIS.MainProject.Common.dll" />
+    <AssemblyPart x:Name="LIS.MainProject.Service" Source="LIS.MainProject.Service.dll" />
+    <AssemblyPart x:Name="LIS.MainProject.Utility" Source="LIS.MainProject.Utility.dll" />
+    <AssemblyPart x:Name="Microsoft.CSharp" Source="Microsoft.CSharp.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Controls" Source="Microsoft.Expression.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Drawing" Source="Microsoft.Expression.Drawing.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Interactions" Source="Microsoft.Expression.Interactions.dll" />
+    <AssemblyPart x:Name="Silverlight.DataSet" Source="Silverlight.DataSet.dll" />
+    <AssemblyPart x:Name="SilverlightTools.Hold" Source="SilverlightTools.Hold.dll" />
+    <AssemblyPart x:Name="Sincorde.Library" Source="Sincorde.Library.dll" />
+    <AssemblyPart x:Name="SLVisifire.Charts" Source="SLVisifire.Charts.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.Composition" Source="System.ComponentModel.Composition.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client" Source="System.ServiceModel.DomainServices.Client.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client.Web" Source="System.ServiceModel.DomainServices.Client.Web.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.Web.Extensions" Source="System.ServiceModel.Web.Extensions.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data" Source="System.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input" Source="System.Windows.Controls.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input.Toolkit" Source="System.Windows.Controls.Input.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit" Source="System.Windows.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit.Internals" Source="System.Windows.Controls.Toolkit.Internals.dll" />
+    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="Telerik.ReportViewer.Silverlight" Source="Telerik.ReportViewer.Silverlight.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Data" Source="Telerik.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls" Source="Telerik.Windows.Controls.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.GridView" Source="Telerik.Windows.Controls.GridView.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.ImageEditor" Source="Telerik.Windows.Controls.ImageEditor.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Input" Source="Telerik.Windows.Controls.Input.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Navigation" Source="Telerik.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.RibbonView" Source="Telerik.Windows.Controls.RibbonView.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.RichTextBoxUI" Source="Telerik.Windows.Controls.RichTextBoxUI.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Data" Source="Telerik.Windows.Data.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Documents" Source="Telerik.Windows.Documents.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Documents.FormatProviders.OpenXml" Source="Telerik.Windows.Documents.FormatProviders.OpenXml.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Expression_Dark" Source="Telerik.Windows.Themes.Expression_Dark.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Metro" Source="Telerik.Windows.Themes.Metro.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Windows7" Source="Telerik.Windows.Themes.Windows7.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Zip" Source="Telerik.Windows.Zip.dll" />
+    <AssemblyPart Source="zh-Hans/Microsoft.CSharp.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.ComponentModel.Composition.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.ComponentModel.DataAnnotations.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.ServiceModel.DomainServices.Client.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.ServiceModel.DomainServices.Client.Web.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.ServiceModel.Web.Extensions.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.Data.Input.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.Input.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Xml.Linq.resources.dll" />
+  </Deployment.Parts>
+</Deployment>

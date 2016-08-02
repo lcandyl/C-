@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C3641AC-CB3B-4D28-A325-7AFA67263279}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>softwareEngineering.Web</RootNamespace>
+    <AssemblyName>softwareEngineering.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SilverlightApplicationList>{B543A4DD-0298-4E19-8AD1-9EB128ED917C}|..\softwareEngineering\softwareEngineering.csproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\softwareEngineering.xap" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\AllProgram.png" />
+    <Content Include="Images\book16.png" />
+    <Content Include="Images\Btn_Down.png" />
+    <Content Include="Images\Btn_Left.png" />
+    <Content Include="Images\Btn_Right.png" />
+    <Content Include="Images\Btn_Up.png" />
+    <Content Include="Images\Buttons\Actual32.png" />
+    <Content Include="Images\Buttons\Add32.png" />
+    <Content Include="Images\Buttons\AddChildMonitor32.png" />
+    <Content Include="Images\Buttons\AlarmWarning32.png" />
+    <Content Include="Images\Buttons\Bottom32.png" />
+    <Content Include="Images\Buttons\Cal32.png" />
+    <Content Include="Images\Buttons\Chart32.png" />
+    <Content Include="Images\Buttons\ColorExplain32.png" />
+    <Content Include="Images\Buttons\Create32.png" />
+    <Content Include="Images\Buttons\Critical32.png" />
+    <Content Include="Images\Buttons\Delete32.png" />
+    <Content Include="Images\Buttons\DetailData24.png" />
+    <Content Include="Images\Buttons\Details32.png" />
+    <Content Include="Images\Buttons\Disabled32.png" />
+    <Content Include="Images\Buttons\Down32.png" />
+    <Content Include="Images\Buttons\DownLoad32.png" />
+    <Content Include="Images\Buttons\Edit32.png" />
+    <Content Include="Images\Buttons\Enabled32.png" />
+    <Content Include="Images\Buttons\ErrorCompare32.png" />
+    <Content Include="Images\Buttons\ErrorSummary32.png" />
+    <Content Include="Images\Buttons\Examine.png" />
+    <Content Include="Images\Buttons\Excel32.png" />
+    <Content Include="Images\Buttons\ExcelInput32.png" />
+    <Content Include="Images\Buttons\ExcelModelDown32.png" />
+    <Content Include="Images\Buttons\File32.png" />
+    <Content Include="Images\Buttons\First32.png" />
+    <Content Include="Images\Buttons\Follow32.png" />
+    <Content Include="Images\Buttons\Histogram32.png" />
+    <Content Include="Images\Buttons\Image32.png" />
+    <Content Include="Images\Buttons\ImageView32.png" />
+    <Content Include="Images\Buttons\InAndOutLine32.png" />
+    <Content Include="Images\Buttons\Init32.png" />
+    <Content Include="Images\Buttons\Last32.png" />
+    <Content Include="Images\Buttons\Left32.png" />
+    <Content Include="Images\Buttons\ManyInput32.png" />
+    <Content Include="Images\Buttons\ManyInputSet32.png" />
+    <Content Include="Images\Buttons\ModuleCompetenceQuery32.png" />
+    <Content Include="Images\Buttons\Next32.png" />
+    <Content Include="Images\Buttons\NoExamine.png" />
+    <Content Include="Images\Buttons\Order32.png" />
+    <Content Include="Images\Buttons\PersonInputQuery32.png" />
+    <Content Include="Images\Buttons\Previous32.png" />
+    <Content Include="Images\Buttons\Query32.png" />
+    <Content Include="Images\Buttons\QueryByStep32.png" />
+    <Content Include="Images\Buttons\ReadData32.png" />
+    <Content Include="Images\Buttons\Relation32.png" />
+    <Content Include="Images\Buttons\RemoveMonitor32.png" />
+    <Content Include="Images\Buttons\RescindWarning32.png" />
+    <Content Include="Images\Buttons\Resume32.png" />
+    <Content Include="Images\Buttons\Right32.png" />
+    <Content Include="Images\Buttons\Run48.png" />
+    <Content Include="Images\Buttons\SameSchemeMonitor32.png" />
+    <Content Include="Images\Buttons\Save32.png" />
+    <Content Include="Images\Buttons\Search32.png" />
+    <Content Include="Images\Buttons\SelectLine32.png" />
+    <Content Include="Images\Buttons\SelectMonitor32.png" />
+    <Content Include="Images\Buttons\Set32.png" />
+    <Content Include="Images\Buttons\SetCondition32.png" />
+    <Content Include="Images\Buttons\ShowChart22.png" />
+    <Content Include="Images\Buttons\ShowChartLine32.png" />
+    <Content Include="Images\Buttons\ShowGrid32.png" />
+    <Content Include="Images\Buttons\Statistics32.png" />
+    <Content Include="Images\Buttons\Stop32.png" />
+    <Content Include="Images\Buttons\Top32.png" />
+    <Content Include="Images\Buttons\Up32.png" />
+    <Content Include="Images\Buttons\UseData32.png" />
+    <Content Include="Images\closeWarn.png" />
+    <Content Include="Images\Desktop.jpg" />
+    <Content Include="Images\flag16.png" />
+    <Content Include="Images\FullScreen16.png" />
+    <Content Include="Images\GetSL.png" />
+    <Content Include="Images\icon.png" />
+    <Content Include="Images\i_clickglobe.png" />
+    <Content Include="Images\Left.png" />
+    <Content Include="Images\LoginCenter.jpg" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\NoFullScreen16.png" />
+    <Content Include="Images\openWarn.png" />
+    <Content Include="Images\Right.png" />
+    <Content Include="Images\techClose-hover.png" />
+    <Content Include="Images\techClose.png" />
+    <Content Include="Images\techName.png" />
+    <Content Include="Images\TreeCenter16.png" />
+    <Content Include="Images\TreeLeaf16.png" />
+    <Content Include="Images\TreeRoot16.png" />
+    <Content Include="Images\welcome.png" />
+    <Content Include="Silverlight.js" />
+    <Content Include="softwareEngineeringTestPage.aspx" />
+    <Content Include="softwareEngineeringTestPage.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Icons\" />
+    <Folder Include="Images\TechSupp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3806</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
